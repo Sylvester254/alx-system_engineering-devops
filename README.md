@@ -1,7 +1,7 @@
 # System engineering DevOps, Shell, Bash & Scripting
 
 ## Rule Of All Time
-[RTFM](./RTFM.jpg)
+<img src = "RTFM.jpg">
 
 ## Directories:
 - [Shell basics](./0x00-shell_basics/)
