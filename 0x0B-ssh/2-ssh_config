@@ -5,5 +5,5 @@
 # to refuse to authenticate using a password
 
 Host school
-    HostName 100.25.42.136
+    HostName 100.25.119.219
     User ubuntu
