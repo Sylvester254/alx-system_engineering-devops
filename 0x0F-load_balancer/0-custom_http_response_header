@@ -12,4 +12,5 @@ sed -i '/listen 80 default_server;/ a add_header X-Served-By $hostname;' /etc/ng
 
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
 sed -i "/listen 80 default_server;/ a error_page 404 /404.html;" /etc/nginx/sites-available/default
+sed -i '11i\add_header X-Served-By $HOSTNAME;' /etc/nginx/nginx.conf
 sudo service nginx start
