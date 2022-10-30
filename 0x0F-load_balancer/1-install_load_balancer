@@ -5,12 +5,31 @@ sudo apt-get -y upgrade
 sudo apt-get -y install haproxy
 sudo chmod 777 /etc/haproxy
 sudo chmod 777 /etc/haproxy/haproxy.cfg
-echo "frontend load_balancer
-        bind *:80
-        mode http
-        default_backend web-servers
-    backend web-servers
-        balance roundrobin
-        server 4523-web-01 54.172.111.74:80 check
-        server 4523-web-02 3.85.212.121:80 check" >> /etc/haproxy/haproxy.cfg
-sudo service haproxy restart
+
+server_config=\
+"
+defaults
+  mode http
+  timeout client 15s
+  timeout connect 10s
+  timeout server 15s
+  timeout http-request 10s
+
+frontend kiranga-tech-frontend
+    bind *:80
+    default_backend kiranga-tech-backend
+backend kiranga-tech-backend
+    balance roundrobin
+    38309-web-01 100.25.119.219:80 check
+    38309-web-02 35.153.194.29:80 check
+"
+echo "$server_config" | sudo dd status=none of=/etc/haproxy/haproxy.cfg
+
+# enable haproxy to be started by init script
+echo "ENABLED=1" | sudo dd status=none of=/etc/default/haproxy
+
+if [ "$(pgrep -c haproxy)" -le 0 ]; then
+	sudo service haproxy start
+else
+	sudo service haproxy restart
+fi

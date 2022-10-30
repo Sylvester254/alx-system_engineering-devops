@@ -13,4 +13,12 @@ sed -i '/listen 80 default_server;/ a add_header X-Served-By $hostname;' /etc/ng
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
 sed -i "/listen 80 default_server;/ a error_page 404 /404.html;" /etc/nginx/sites-available/default
 sed -i '/^\slocation.*/i \        add_header X-Served-By $hostname;' /etc/nginx/sites-available/default
-sudo service nginx start
+#shellcheck disable=SC2154
+echo "$server_config" | sudo dd status=none of=/etc/nginx/sites-enabled/default
+echo "$server_config" | sudo dd status=none of=/etc/nginx/sites-enabled/default
+
+if [ "$(pgrep -c nginx)" -le 0 ]; then
+	sudo service nginx start
+else
+	sudo service nginx restart
+fi
