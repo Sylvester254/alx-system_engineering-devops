@@ -19,3 +19,4 @@ Write a blog post explaining what happens when you type https://www.google.com i
 > Publish your blog post on Medium or LinkedIn; share the URL of your blog post in your answer file and in the field below.
 
 > Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.
+<img src = "./aJPw3mw.jpg"/>
