@@ -5,7 +5,7 @@
 # to refuse to authenticate using a password
 
 Host school
-    HostName 34.224.94.25
+    HostName 35.153.194.29
     User ubuntu
     PasswordAuthentication no
 	IdentityFile ~/.ssh/school
