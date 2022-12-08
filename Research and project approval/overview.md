@@ -1,6 +1,5 @@
-
-Portfolio Project Overview
-What’s a Portfolio Project?
+# Portfolio Project Overview
+## What’s a Portfolio Project?
 
 The Portfolio Project will be a project you will showcase on your resumé, online, and during interviews. A completed Portfolio Project will consist of:
 
@@ -10,7 +9,7 @@ The Portfolio Project will be a project you will showcase on your resumé, onlin
     A presentation
     A blog post
 
-Why build a Portfolio project?
+## Why build a Portfolio project?
 
 The Portfolio Project serves several different purposes:
 
@@ -18,7 +17,7 @@ The Portfolio Project serves several different purposes:
     Provides a realistic workplace scenario where engineers create a solution to fit loosely defined requirements, break this down into concrete tasks and implement on a deadline.
     Allows for self-directed learning to explore a new technical topic, deepen understanding of a curriculum-covered topic, or use technology to bring an idea to life.
 
-Timeline and checkpoints
+## Timeline and checkpoints
 
 Projects can be developed alone, or in teams of up to 3 students. The technologies and project concept are defined by the student teams.
 
@@ -38,10 +37,10 @@ Build Portfolio Project (Part 1-3)
     Week 7: * Blog post reflection (peer review) * github cleanup
 
 End of Foundations Year
-Resources
+## Resources
 
 Check out these software tools that are available to you:
 
-    Github Education Pack (available through the “Tools” section of your left-hand menu)
-    Microsoft Applications
+- [Github Education Pack](https://education.github.com/pack) (available through the “Tools” section of your left-hand menu)
+- Microsoft Applications
 
