@@ -19,6 +19,7 @@ For this project, consider that it is better to end up with something a bit smal
 It is fine to find ways to speed up development by taking shortcuts, but it’s important to state these openly, and have a plan in place to amend these if there is time. An example might be to first read and write from files without using a database (as you did with Airbnb at first), or hard-coding some values. This might be a good strategy if the real challenge of your software lies elsewhere, and you want to first create an end-to-end proof of concept to demonstrate feasibility.
 
 ## Concepts
+- [Project Part 1](./Part%201.md)
 - [Ways to make a portfolio project great](./proj-great.md)
 - [Portfolio project overview](./overview.md)
 - [Research & Project Approval Overview](./research_and_approval.md)
@@ -28,3 +29,4 @@ It is fine to find ways to speed up development by taking shortcuts, but it’s 
 - [SqlDBM](https://sqldbm.com/Home/)
 - [user stories](https://en.wikipedia.org/wiki/User_story)
 - [Mockup](https://balsamiq.com/)
+- [Project Part 3](./part3.md)
